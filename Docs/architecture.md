@@ -1,4 +1,4 @@
-# Architecture — PunAI
+# Architecture — AI Conversations
 
 ## Component responsibilities
 
