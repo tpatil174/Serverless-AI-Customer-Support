@@ -1,6 +1,6 @@
-# PunAI — Serverless AI Customer Support System
+# AI Project — Serverless AI Customer Support System
 
-PunAI is a **serverless, AI-powered customer support system** built entirely on AWS.
+AI Project is a **serverless, AI-powered customer support system** built entirely on AWS.
 It handles customer queries automatically, maintains conversation memory, detects
 dissatisfaction using **real AI intent classification** (not keyword matching), and
 escalates critical issues to human support via email.
@@ -115,7 +115,7 @@ POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/chat
 
 ### 1. DynamoDB table
 
-- Table name: `PunAI-Conversations`
+- Table name: `AI-Conversations`
 - Partition key: `user_id` (String)
 - Billing mode: On-demand (PAY_PER_REQUEST)
 - Enable TTL on attribute: `ttl`
@@ -131,7 +131,7 @@ POST https://<api-id>.execute-api.<region>.amazonaws.com/prod/chat
 
 ```bash
 aws secretsmanager create-secret \
-  --name punai/openai-api-key \
+  --name aiconversations/openai-api-key \
   --secret-string '{"OPENAI_API_KEY":"sk-your-key-here"}'
 ```
 
@@ -171,9 +171,9 @@ Upload `lambda.zip` in the AWS Lambda console.
 
 | Variable | Value |
 |---|---|
-| `DYNAMODB_TABLE` | `PunAI-Conversations` |
+| `DYNAMODB_TABLE` | `AI-Conversations` |
 | `SNS_TOPIC_ARN` | Your SNS topic ARN |
-| `OPENAI_SECRET_NAME` | `punai/openai-api-key` |
+| `OPENAI_SECRET_NAME` | `aiconversations/openai-api-key` |
 
 ### 7. API Gateway
 
@@ -210,7 +210,7 @@ fields @timestamp, @duration
 ## Project Structure
 
 ```
-punai/
+AI-Conversations/
 ├── lambda/
 │   ├── lambda_function.py   # Main Lambda handler
 │   └── requirements.txt     # Python dependencies
