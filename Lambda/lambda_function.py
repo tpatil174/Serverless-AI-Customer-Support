@@ -1,5 +1,5 @@
 """
-PunAI - Improved Lambda Function
+AI Project - Improved Lambda Function
 Author: Tushar Patil (improved version)
 
 Improvements over original:
