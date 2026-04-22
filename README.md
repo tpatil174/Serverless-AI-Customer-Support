@@ -1,14 +1,26 @@
-# AI Project — Serverless AI Customer Support System
+> Production-style serverless AI support system demonstrating real-world troubleshooting, automation, and escalation workflows using AWS.
 
 AI Project is a **serverless, AI-powered customer support system** built entirely on AWS.
 It handles customer queries automatically, maintains conversation memory, detects
 dissatisfaction using **real AI intent classification** (not keyword matching), and
 escalates critical issues to human support via email.
 
-> This project was built by studying an existing open-source implementation and
-> rebuilding it with production-grade improvements — structured logging, proper
-> error handling, Secrets Manager, DynamoDB TTL, and AI-based intent detection.
+---
 
+## 🎯 Why This Project
+
+This project simulates a real-world customer support system where:
+
+- Users raise issues via API
+- AI understands intent and sentiment
+- System responds automatically
+- Critical cases are escalated to humans
+
+It demonstrates practical skills in:
+- Troubleshooting backend systems
+- Handling production-level logging and monitoring
+- Designing scalable serverless architectures
+- Working with real-world support workflows
 ---
 
 ## Architecture
@@ -31,6 +43,20 @@ Admin Email  (if escalation triggered)
 ```
 
 ---
+---
+
+## 📸 Screenshots
+
+### Architecture Overview
+![Architecture](screenshots/architecture.png)
+
+### API Testing (Postman)
+![API Test](screenshots/api-test.png)
+
+### CloudWatch Logs
+![Logs](screenshots/logs.png)
+
+----
 
 ## Key Features
 
@@ -47,6 +73,18 @@ Admin Email  (if escalation triggered)
 
 ---
 
+## 🧩 Skills Demonstrated
+
+- Application Support & Incident Handling
+- Log Analysis using CloudWatch
+- API Debugging & Testing (Postman)
+- SQL/NoSQL Data Handling (DynamoDB)
+- Cloud Infrastructure (AWS)
+- Automation & Escalation Systems
+- Problem Solving & Root Cause Analysis
+  
+----
+
 ## AWS Services Used
 
 | Service | Purpose |
@@ -60,6 +98,21 @@ Admin Email  (if escalation triggered)
 | IAM | Least-privilege role for Lambda |
 
 ---
+
+## 🧪 Example Real Scenario
+
+User: "I have contacted support twice and my issue is still unresolved"
+
+System behavior:
+- Detects negative sentiment
+- Classifies issue as escalation-worthy
+- Generates empathetic response
+- Triggers SNS alert to admin
+- Logs full request for analysis
+
+This mirrors real IT support workflows.
+
+----
 
 ## How It Works
 
