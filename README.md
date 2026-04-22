@@ -43,20 +43,6 @@ Admin Email  (if escalation triggered)
 ```
 
 ---
----
-
-## 📸 Screenshots
-
-### Architecture Overview
-![Architecture](screenshots/architecture.png)
-
-### API Testing (Postman)
-![API Test](screenshots/api-test.png)
-
-### CloudWatch Logs
-![Logs](screenshots/logs.png)
-
-----
 
 ## Key Features
 
