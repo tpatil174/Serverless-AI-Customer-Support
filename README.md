@@ -32,7 +32,7 @@ Customer / Frontend
 Amazon API Gateway  ──  POST /chat
         │
         ▼
-AWS Lambda  (PunAI Core)
+AWS Lambda  (AI conversion Core)
   ├── OpenAI API        →  Intent classification + response generation
   ├── Amazon DynamoDB   →  Conversation history (with auto-TTL cleanup)
   ├── Amazon SNS        →  Escalation email to admin
